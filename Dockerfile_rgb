@@ -1,0 +1,14 @@
+FROM docker.io/qmkfm/base_container:latest
+
+
+RUN pip install qmk && \
+    qmk setup -y -H /qmk_firmware && \
+    apt-get update && \
+    apt-get install -y vim
+
+WORKDIR /qmk_firmware
+
+COPY config/qmk/qmk.ini /root/.config/qmk/qmk.ini
+
+# make bash as default command
+CMD ["/bin/bash"]
