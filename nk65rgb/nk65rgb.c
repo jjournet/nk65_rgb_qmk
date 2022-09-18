@@ -1,4 +1,4 @@
-#include "nk65.h"
+#include "nk65rgb.h"
 #include "drivers/led/issi/is31fl3733.h"
 
 #ifdef RGB_MATRIX_ENABLE

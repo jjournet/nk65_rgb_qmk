@@ -8,7 +8,7 @@ RUN pip install qmk && \
 
 WORKDIR /qmk_firmware
 
-COPY config/qmk/qmk.ini /root/.config/qmk/qmk.ini
+COPY config/qmk/qmkrgb.ini /root/.config/qmk/qmk.ini
 
 # make bash as default command
 CMD ["/bin/bash"]
